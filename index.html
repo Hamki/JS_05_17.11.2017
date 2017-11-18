@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Денис Шершунов - №5</title>
+    <link rel='stylesheet' type="text/css" href='main.css' />
+</head>
+
+<body>
+    <div id="board2" style="width: 400px"></div>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/chessboard.js"></script>
+    <script>
+        var board2 = ChessBoard('board2', {
+            draggable: true,
+            dropOffBoard: 'trash',
+            sparePieces: true
+        });
+        $('#startBtn').on('click', board2ss.start);
+        $('#clearBtn').on('click', board2.clear);
+
+    </script>
+</body>
+
+</html>
